@@ -7,7 +7,7 @@ This is the account proxy server to access age-restricted videos via an age-veri
 
 ### Installation
 1. Install required dependencies with `npm install`.
-2. Create the `.env` configuration (see below) and paste the required `SAPISID` and `PSID` cookies from your YouTube account.
+2. Create the `.env` configuration (see below) and paste the required cookies from your YouTube account.
 > The YouTube account must be verified in order to unlock some age-restricted videos.
 3. Start the server with `npm run proxy:start` or `npm start` in `/account-proxy`.
 
@@ -25,16 +25,13 @@ ENABLE_TRUST_PROXY=0
 # The statistics can be retrieved via the `/getStats` endpoint in JSON format
 ENABLE_STATS=1
 
-# YouTube Config
-# API Key is always the same (required)
-API_KEY=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8
-
 # Cookie values (required)
 SID=
 HSID=
 SSID=
 APISID=
 SAPISID=
+PSIDTS=
 
 # Proxy (https)
 # PROXY=
